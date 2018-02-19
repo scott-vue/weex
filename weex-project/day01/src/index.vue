@@ -1,8 +1,14 @@
 <template>
   <div class="wrapper">
-    <image :src="logo" class="logo"></image>
-    <text class="greeting">The environment is ready!</text>
-    <text class="message">Now, let's use Vue.js to build your Weex app.</text>
+    <!--<image :src="logo" class="logo"></image>-->
+    <!--<text class="greeting">The environment is ready!</text>-->
+    <!--<text class="message">Now, let's use Vue.js to build your Weex app.</text>-->
+    <div class="box1">
+      <text>12</text>
+    </div>
+    <div class="box2">
+      <text>34</text>
+    </div>
   </div>
 </template>
 
@@ -10,7 +16,7 @@
   export default {
     data () {
       return {
-        logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png',
+        //logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png',
       }
     }
   }
@@ -21,18 +27,31 @@
     justify-content: center;
     align-items: center;
   }
-  .logo {
-    width: 424px;
+  .box1 {
+    width: 200px;
     height: 200px;
+    background-color: red;
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
   }
-  .greeting {
-    margin-top: 70px;
-    font-size: 50px;
-    color: #41B883;
+  .box2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
   }
-  .message {
-    margin: 30px;
-    font-size: 32px;
-    color: #727272;
-  }
+  /*.logo {*/
+    /*width: 424px;*/
+    /*height: 200px;*/
+  /*}*/
+  /*.greeting {*/
+    /*margin-top: 70px;*/
+    /*font-size: 50px;*/
+    /*color: #41B883;*/
+  /*}*/
+  /*.message {*/
+    /*margin: 30px;*/
+    /*font-size: 32px;*/
+    /*color: #727272;*/
+  /*}*/
 </style>
